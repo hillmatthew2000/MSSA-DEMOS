@@ -1,0 +1,14 @@
+C:\Demos\CSharp\subscription\bin\Debug\net8.0\Subscription.exe
+C:\Demos\CSharp\subscription\bin\Debug\net8.0\Subscription.deps.json
+C:\Demos\CSharp\subscription\bin\Debug\net8.0\Subscription.runtimeconfig.json
+C:\Demos\CSharp\subscription\bin\Debug\net8.0\Subscription.dll
+C:\Demos\CSharp\subscription\bin\Debug\net8.0\Subscription.pdb
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.GeneratedMSBuildEditorConfig.editorconfig
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.AssemblyInfoInputs.cache
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.AssemblyInfo.cs
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.csproj.CoreCompileInputs.cache
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.dll
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\refint\Subscription.dll
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.pdb
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\Subscription.genruntimeconfig.cache
+C:\Demos\CSharp\subscription\obj\Debug\net8.0\ref\Subscription.dll

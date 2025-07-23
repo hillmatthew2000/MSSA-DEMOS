@@ -1,0 +1,14 @@
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.AssemblyInfoInputs.cache
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.AssemblyInfo.cs
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.csproj.CoreCompileInputs.cache
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\bin\Debug\net8.0\GPACalculatorApp1.exe
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\bin\Debug\net8.0\GPACalculatorApp1.deps.json
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\bin\Debug\net8.0\GPACalculatorApp1.runtimeconfig.json
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\bin\Debug\net8.0\GPACalculatorApp1.dll
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\bin\Debug\net8.0\GPACalculatorApp1.pdb
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.dll
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\refint\GPACalculatorApp1.dll
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.pdb
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\GPACalculatorApp1.genruntimeconfig.cache
+C:\Demos\CSharp\GPACalculatorApp\GPACalculatorApp1\obj\Debug\net8.0\ref\GPACalculatorApp1.dll
