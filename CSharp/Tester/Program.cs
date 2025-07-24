@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        string input = "yes";
-        bool saidYes = (input.ToUpper() == "YES");
-        Console.WriteLine(saidYes);
+        bool isLoggedIn = false;
+        if (!isLoggedIn)
+        Console.WriteLine("log in first");
     }
 }
