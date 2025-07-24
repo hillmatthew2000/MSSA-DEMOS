@@ -34,38 +34,36 @@ class Program
                 break;
         }
 
-        if (product[1] == "RD")
+        switch (product[1])
         {
-            color = "Red";
-        }
-        else if (product[1] == "BL")
-        {
-            color = "Black";
-        }
-        else if (product[1] == "MN")
-        {
-            color = "Maroon";
-        }
-        else
-        {
-            color = "White";
+            case "MN":
+                color = "Mint";
+                break;
+            case "RD":
+                color = "Red";
+                break;
+            case "BL":
+                color = "Blue";
+                break;
+            default:
+                color = "Other";
+                break;
         }
 
-        if (product[2] == "S")
+        switch (product[2])
         {
-            size = "Small";
-        }
-        else if (product[2] == "M")
-        {
-            size = "Medium";
-        }
-        else if (product[2] == "L")
-        {
-            size = "Large";
-        }
-        else
-        {
-            size = "One Size Fits All";
+            case "S":
+                size = "Small";
+                break;
+            case "M":
+                size = "Medium";
+                break;
+            case "L":
+                size = "Large";
+                break;
+            default:
+                size = "One Size Fits All";
+                break;
         }
 
         Console.WriteLine($"Product: {size} {color} {type}");
