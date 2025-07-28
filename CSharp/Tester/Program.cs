@@ -8,31 +8,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter the grid dimension");
-        string userInput = Console.ReadLine();
-        int gridDimensions = int.Parse(userInput);
-
-        CreateGrid(gridDimensions);
-    }
-
-    public static void CreateGrid(int gridDimensions)
-    {
-        char xLetter = 'X';
-        char oLetter = 'O';
-        for (int i = 0; i < gridDimensions; i++)
+        for (int i = 1; i <= 100; i++)
         {
-            for (int j = 0; j < gridDimensions; j++)
+            if ((i % 3 == 0) && (i % 5 == 0))
             {
-                if ((i + j) % 2 == 0)
-                {
-                    Console.Write(xLetter);
-                }
-                else
-                {
-                    Console.Write(oLetter);
-                }
+                Console.WriteLine($"{i} FizzBuzz");
             }
-            Console.WriteLine();
+            else if (i % 3 == 0)
+            {
+                Console.WriteLine($"{i} Fizz");
+            }
+            else if (i % 5 == 0)
+            {
+                Console.WriteLine($"{i} Buzz");
+            }
         }
     }
 
