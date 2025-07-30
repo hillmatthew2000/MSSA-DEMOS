@@ -32,26 +32,49 @@ class Program
         // Console.Clear();
         // Console.WriteLine($"Access Granted, Welcome {roleName}!");
 
-        string[] myString = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+        // string[] myString = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+
+        // foreach (string sentence in myString)
+        // {
+        //     string remaining = sentence;
+        //     int periodLocation;
+        //     do
+        //     {
+        //         periodLocation = remaining.IndexOf(".");
+        //         if (periodLocation > -1)
+        //         {
+        //             Console.WriteLine("Sentence: " + remaining.Remove(periodLocation));
+        //             remaining = remaining.Substring(periodLocation + 1).TrimStart(' ');
+        //         }
+        //         else if (remaining.Length > 0)
+        //         {
+        //             Console.WriteLine("Sentence: " + remaining.TrimStart());
+        //         }
+
+        //     } while (periodLocation > -1);
+        // }
         
-        foreach (string sentence in myString)
+
+        //1. Declare variables (a string array called mStrings with multiple strings)
+        string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+        //2. Loop through each string in the array
+        foreach (string input in myStrings)
         {
-            string remaining = sentence;
-            int periodLocation;
-            do
+            //a. Store intermediate string
+            string myString = input;
+            string[] sentences = myString.Split('.');
+            foreach (string sentence in sentences)
             {
-                periodLocation = remaining.IndexOf(".");
-                if (periodLocation > -1)
+                //b. Trim the string
+                string trimmedSentence = sentence.Trim();
+                //c. Check if the string is not empty
+                if (!string.IsNullOrEmpty(trimmedSentence))
                 {
-                    Console.WriteLine("Sentence: " + remaining.Remove(periodLocation));
-                    remaining = remaining.Substring(periodLocation + 1).TrimStart(' ');
+                    //d. Print the trimmed string
+                    Console.WriteLine("Sentence: " + trimmedSentence);
                 }
-                else if (remaining.Length > 0)
-                {
-                    Console.WriteLine("Sentence: " + remaining.TrimStart());
-                }
-                
-            } while (periodLocation > -1);
+            }
+
         }
     }
 }
