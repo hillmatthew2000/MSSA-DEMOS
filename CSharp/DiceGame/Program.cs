@@ -1,7 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
-namespace Tester;
+namespace DiceGame;
 
 class Program
 {

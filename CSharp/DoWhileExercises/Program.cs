@@ -1,4 +1,4 @@
-﻿namespace Tester;
+﻿namespace DoWhile;
 
 class Program
 {

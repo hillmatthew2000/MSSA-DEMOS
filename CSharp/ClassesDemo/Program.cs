@@ -1,4 +1,4 @@
-﻿namespace Tester;
+﻿namespace ClassesDemo;
 class Program
 {
     static void Main(string[] args)
