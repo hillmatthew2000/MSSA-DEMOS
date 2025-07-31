@@ -1,0 +1,15 @@
+C:\MSSA-DEMOS\CSharp\tester2\bin\Debug\net8.0\Tester2.exe
+C:\MSSA-DEMOS\CSharp\tester2\bin\Debug\net8.0\Tester2.deps.json
+C:\MSSA-DEMOS\CSharp\tester2\bin\Debug\net8.0\Tester2.runtimeconfig.json
+C:\MSSA-DEMOS\CSharp\tester2\bin\Debug\net8.0\Tester2.dll
+C:\MSSA-DEMOS\CSharp\tester2\bin\Debug\net8.0\Tester2.pdb
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.GeneratedMSBuildEditorConfig.editorconfig
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.AssemblyInfoInputs.cache
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.AssemblyInfo.cs
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.csproj.CoreCompileInputs.cache
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.sourcelink.json
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.dll
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\refint\Tester2.dll
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.pdb
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\Tester2.genruntimeconfig.cache
+C:\MSSA-DEMOS\CSharp\tester2\obj\Debug\net8.0\ref\Tester2.dll

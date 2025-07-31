@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetClinic", "VetClinic\VetC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesDemo", "ClassesDemo\ClassesDemo.csproj", "{4D0BC782-BCAC-4EF7-8AD1-7F6008A11A23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester2", "Tester2\Tester2.csproj", "{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{4D0BC782-BCAC-4EF7-8AD1-7F6008A11A23}.Release|x64.Build.0 = Release|Any CPU
 		{4D0BC782-BCAC-4EF7-8AD1-7F6008A11A23}.Release|x86.ActiveCfg = Release|Any CPU
 		{4D0BC782-BCAC-4EF7-8AD1-7F6008A11A23}.Release|x86.Build.0 = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|x64.Build.0 = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|x64.ActiveCfg = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|x64.Build.0 = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{BBAEC4AD-1A1B-4C06-A5BE-990CFC803D2F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
