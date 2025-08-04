@@ -1,0 +1,15 @@
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\bin\Debug\net8.0\MortgageLoanCalculator.exe
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\bin\Debug\net8.0\MortgageLoanCalculator.deps.json
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\bin\Debug\net8.0\MortgageLoanCalculator.runtimeconfig.json
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\bin\Debug\net8.0\MortgageLoanCalculator.dll
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\bin\Debug\net8.0\MortgageLoanCalculator.pdb
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.AssemblyInfoInputs.cache
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.AssemblyInfo.cs
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.csproj.CoreCompileInputs.cache
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.sourcelink.json
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.dll
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\refint\MortgageLoanCalculator.dll
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.pdb
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\MortgageLoanCalculator.genruntimeconfig.cache
+C:\MSSA-DEMOS\CSharp\mortgageloancalculator\obj\Debug\net8.0\ref\MortgageLoanCalculator.dll
