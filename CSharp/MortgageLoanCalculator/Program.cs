@@ -31,7 +31,7 @@ public class Mortgage
     public decimal MonthlyPropertyTax { get; set; }
     public decimal OriginationFee { get; set; }
     public decimal ClosingCosts { get; set; }
-    public decimal MarketValue { get; set; } // New property
+    public decimal MarketValue { get; set; }
     
     private static decimal homeownerInsuranceRate = 0.0075m;
     private static decimal propertyTaxRate = 0.0125m;

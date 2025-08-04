@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MortgageLoanCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5da1f1ef9cde871ef97b215528037334ff7e7674")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1af00a60fe5e52fb0952bb71a5228c71aac97bd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("MortgageLoanCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MortgageLoanCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
