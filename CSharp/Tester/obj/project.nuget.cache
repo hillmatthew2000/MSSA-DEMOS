@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nLeGD8qaoW8=",
+  "dgSpecHash": "HFum3pWsRoA=",
   "success": true,
-  "projectFilePath": "C:\\MSSA-DEMOS\\CSharp\\Tester\\tester.csproj",
+  "projectFilePath": "C:\\MSSA-DEMOS\\csharp\\tester\\Tester.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
