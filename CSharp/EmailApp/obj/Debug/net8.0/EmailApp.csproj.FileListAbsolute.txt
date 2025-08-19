@@ -1,0 +1,15 @@
+C:\MSSA-DEMOS\CSharp\emailapp\bin\Debug\net8.0\EmailApp.exe
+C:\MSSA-DEMOS\CSharp\emailapp\bin\Debug\net8.0\EmailApp.deps.json
+C:\MSSA-DEMOS\CSharp\emailapp\bin\Debug\net8.0\EmailApp.runtimeconfig.json
+C:\MSSA-DEMOS\CSharp\emailapp\bin\Debug\net8.0\EmailApp.dll
+C:\MSSA-DEMOS\CSharp\emailapp\bin\Debug\net8.0\EmailApp.pdb
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.AssemblyInfoInputs.cache
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.AssemblyInfo.cs
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.csproj.CoreCompileInputs.cache
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.sourcelink.json
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.dll
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\refint\EmailApp.dll
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.pdb
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\EmailApp.genruntimeconfig.cache
+C:\MSSA-DEMOS\CSharp\emailapp\obj\Debug\net8.0\ref\EmailApp.dll
