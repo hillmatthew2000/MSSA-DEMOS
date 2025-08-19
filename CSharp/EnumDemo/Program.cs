@@ -1,4 +1,4 @@
-﻿namespace Tester2;
+﻿namespace EnumDemo;
 
 class Program
 {
