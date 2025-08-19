@@ -4,19 +4,23 @@ namespace DelegateDemo;
 
 class Program
 {
-        static int Add(int x, int y) => x + y;
-        static int Multiply(int x, int y) => x * y;
+    static int Add(int x, int y) => x + y;
+    static int Multiply(int x, int y) => x * y;
+    static int Subtract(int x, int y) => x - y;
     static void Main()
     {
         Calculator calc;
 
-        Console.Write("Enter operation (add or multiply): ");
+        Console.Write("Enter operation (add, multiply, or subtract): ");
         string input = Console.ReadLine();
 
-        if (input == "add")
-            calc = Add;
-        else
-            calc = Multiply;
+        calc = input.ToLower() switch
+        {
+            "add" => Add,
+            "multiply" => Multiply,
+            "subtract" => Subtract,
+            _ => throw new InvalidOperationException("Invalid Operation")
+        };
 
         int result = calc(3, 4);
         Console.WriteLine($"Result: {result}");
