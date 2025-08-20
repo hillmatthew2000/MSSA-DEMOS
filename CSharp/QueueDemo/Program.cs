@@ -12,6 +12,9 @@ class Program
         customerQueue.Enqueue("Bob");
         customerQueue.Enqueue("Charlie");
 
+        int customerCount = customerQueue.Count;
+        customerQueue.Clone();
+
         Console.WriteLine("Customers in queue:");
         foreach (var customer in customerQueue)
         {
