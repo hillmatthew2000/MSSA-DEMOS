@@ -1,0 +1,15 @@
+C:\MSSA-DEMOS\CSharp\zooeventapp\bin\Debug\net8.0\ZooEventApp.exe
+C:\MSSA-DEMOS\CSharp\zooeventapp\bin\Debug\net8.0\ZooEventApp.deps.json
+C:\MSSA-DEMOS\CSharp\zooeventapp\bin\Debug\net8.0\ZooEventApp.runtimeconfig.json
+C:\MSSA-DEMOS\CSharp\zooeventapp\bin\Debug\net8.0\ZooEventApp.dll
+C:\MSSA-DEMOS\CSharp\zooeventapp\bin\Debug\net8.0\ZooEventApp.pdb
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.AssemblyInfoInputs.cache
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.AssemblyInfo.cs
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.csproj.CoreCompileInputs.cache
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.sourcelink.json
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.dll
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\refint\ZooEventApp.dll
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.pdb
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ZooEventApp.genruntimeconfig.cache
+C:\MSSA-DEMOS\CSharp\zooeventapp\obj\Debug\net8.0\ref\ZooEventApp.dll
