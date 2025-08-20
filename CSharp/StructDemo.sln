@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructDemo", "StructDemo\StructDemo.csproj", "{E06EDA08-6396-4F34-A469-F51B37FD483F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListDemo", "ArrayListDemo\ArrayListDemo.csproj", "{C3D97035-A893-4333-8522-603937C33C28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{E06EDA08-6396-4F34-A469-F51B37FD483F}.Release|x64.Build.0 = Release|Any CPU
 		{E06EDA08-6396-4F34-A469-F51B37FD483F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E06EDA08-6396-4F34-A469-F51B37FD483F}.Release|x86.Build.0 = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|x64.Build.0 = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Debug|x86.Build.0 = Debug|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|x64.ActiveCfg = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|x64.Build.0 = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3D97035-A893-4333-8522-603937C33C28}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

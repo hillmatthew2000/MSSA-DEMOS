@@ -1,0 +1,15 @@
+C:\MSSA-DEMOS\CSharp\arraylistdemo\bin\Debug\net8.0\ArrayListDemo.exe
+C:\MSSA-DEMOS\CSharp\arraylistdemo\bin\Debug\net8.0\ArrayListDemo.deps.json
+C:\MSSA-DEMOS\CSharp\arraylistdemo\bin\Debug\net8.0\ArrayListDemo.runtimeconfig.json
+C:\MSSA-DEMOS\CSharp\arraylistdemo\bin\Debug\net8.0\ArrayListDemo.dll
+C:\MSSA-DEMOS\CSharp\arraylistdemo\bin\Debug\net8.0\ArrayListDemo.pdb
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.AssemblyInfoInputs.cache
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.AssemblyInfo.cs
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.csproj.CoreCompileInputs.cache
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.sourcelink.json
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.dll
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\refint\ArrayListDemo.dll
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.pdb
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ArrayListDemo.genruntimeconfig.cache
+C:\MSSA-DEMOS\CSharp\arraylistdemo\obj\Debug\net8.0\ref\ArrayListDemo.dll
