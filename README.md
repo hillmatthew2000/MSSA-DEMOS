@@ -2,7 +2,6 @@
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-11.0-239120?style=flat-square&logo=c-sharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![MSSA](https://img.shields.io/badge/MSSA-Cloud%20Application%20Development-blue?style=flat-square)](https://military.microsoft.com/programs/microsoft-software-systems-academy/)
 
 > A comprehensive collection of demos, exercises, and challenges from my Microsoft Software and Systems Academy (MSSA) Cloud Application Development (CAD) internship journey.
