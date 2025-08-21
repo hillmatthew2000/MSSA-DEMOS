@@ -178,7 +178,7 @@ While this is primarily a learning repository, suggestions and improvements are 
 **Matthew Hill** - MSSA CAD Student
 
 - GitHub: [@hillmatthew2000](https://github.com/hillmatthew2000)
-- LinkedIn: [Connect with me](https://linkedin.com/in/your-profile)
+- LinkedIn: [Connect with me](https://linkedin.com/in/matthew-hill1)
 
 ---
 
