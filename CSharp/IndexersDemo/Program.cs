@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace tester2;
+namespace IndexerDemo;
 
 class Program
 {
