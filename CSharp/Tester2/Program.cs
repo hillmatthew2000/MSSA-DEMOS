@@ -3,72 +3,37 @@
 namespace tester2;
 
 class Program
+
 {
     static void Main(string[] args)
     {
-        Library myLibrary = new Library();
-        myLibrary.AddBook(new Book("Catch-22", "Joseph Heller"));
-        myLibrary.AddBook(new Book("To Kill a Mockingbird", "Harper Lee"));
-        myLibrary.AddBook(new Book("1984", "George Orwell"));
+        Console.WriteLine("Start of Main");
 
-        Console.WriteLine("First book: " + myLibrary[0]);
-        Console.WriteLine("Second book: " + myLibrary[1]);
-        Console.WriteLine("Third book: " + myLibrary[2]);
-
-        myLibrary[2] = new Book("Moby Dick", "Herman Melville");
-        Console.WriteLine("Updated third book: " + myLibrary[2]);
-
-        Console.WriteLine("Find by title 'Catch-22: " + myLibrary["Catch-22"]);
-    }
-}
-
-class Book
-{
-    public string Title { get; set; }
-    public string Author { get; set; }
-
-    public Book(string title, string author)
-    {
-        Title = title;
-        Author = author;
-    }
-
-    public override string ToString()
-    {
-        return $"{Title} by {Author}";
-    }
-}
-
-class Library
-{
-    private List<Book> books = new List<Book>();
-
-    public void AddBook(Book book)
-    {
-        books.Add(book);
-    }
-
-    //String based indexer
-    public Book this[string title]
-    {
-        get
+        try
         {
-            foreach (var book in books)
+            Console.WriteLine("Entered outer try block");
+            try
             {
-                if (book.Title.Equals(title, StringComparison.OrdinalIgnoreCase))
-                    return book;
+                Console.WriteLine("Entered inner try block");
+
+                int x = 0;
+                int result = 10 / x;
+
+                Console.WriteLine("This line will not be executed due to exception above.");
             }
-            return null;
+            finally
+            {
+                Console.WriteLine("Inner finally block executed.");
+            }
         }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Caught DividByZeroException in outer catch block.");
+        }
+        finally
+        {
+            Console.WriteLine("Outer finally block executed.");
+        }
+        Console.WriteLine("End of Main");
     }
-
-    //Int based indexer
-    public Book this[int index]
-    {
-        get => books[index];
-        set => books[index] = value;
-    }
-
-    public int Count => books.Count;
-
 }
