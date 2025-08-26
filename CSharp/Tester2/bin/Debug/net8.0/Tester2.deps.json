@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Tester2/1.0.0": {
+      "tester2/1.0.0": {
         "runtime": {
-          "Tester2.dll": {}
+          "tester2.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Tester2/1.0.0": {
+    "tester2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
