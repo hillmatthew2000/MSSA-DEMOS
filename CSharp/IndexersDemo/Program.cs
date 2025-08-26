@@ -44,7 +44,7 @@ class Book
         return $"{Title} by {Author}";
     }
 }
-class Library : IEnumerable// Implement generic IEnumerable
+class Library : IEnumerable<Book> // Implement generic IEnumerable
 {
     private List<Book> books = new List<Book>();
 
