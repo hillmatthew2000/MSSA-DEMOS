@@ -93,6 +93,19 @@ class Program
         {
             Console.WriteLine("Caught StackOverflowException");
         }
+
+        //How to handle an unknown Exception
+        try
+        {
+            //Code that may throw an exception
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An exception has occured");
+            Console.WriteLine("Type (full): " + ex.GetType());
+            Console.WriteLine("Type (name only): " + ex.GetType().Name);
+            Console.WriteLine("Message: " + ex.Message);
+        }
     }
 
 
