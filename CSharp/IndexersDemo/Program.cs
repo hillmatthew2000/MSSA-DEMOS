@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+﻿using System.Collections;
 
 namespace IndexerDemo;
 
@@ -19,6 +19,12 @@ class Program
         Console.WriteLine("Updated third book: " + myLibrary[2]);
 
         Console.WriteLine("Find by title 'Catch-22: " + myLibrary["Catch-22"]);
+
+        //enumerate the content of the collection
+        for (int i = 0; i < myLibrary.Count; i++)
+        {
+            Console.WriteLine($"Book {i + 1}: {myLibrary[i]}");
+        }
     }
 }
 
@@ -38,8 +44,7 @@ class Book
         return $"{Title} by {Author}";
     }
 }
-
-class Library
+class Library : IEnumerable// Implement generic IEnumerable
 {
     private List<Book> books = new List<Book>();
 
@@ -71,7 +76,20 @@ class Library
 
     public int Count => books.Count;
 
+    //Enumerator Support
+    public IEnumerator<Book> GetEnumerator()
+    {
+        return books.GetEnumerator();
+    }
+
+    //non generic enumerator
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
 }
+
 
 public class BaseballTeam
     {
