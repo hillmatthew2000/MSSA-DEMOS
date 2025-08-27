@@ -1,0 +1,27 @@
+{ 
+
+    "version": "0.2.0", 
+
+    "configurations": [ 
+
+        { 
+
+            "name": ".NET: Launch with APP_MODE", 
+
+            "type": "coreclr", 
+
+            "request": "launch", 
+
+            "program": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\bin\\Debug\\net8.0\\Tester2.dll", 
+
+            "env": { 
+
+                "APP_MODE": "Development" 
+
+            } 
+
+        } 
+
+    ] 
+
+} 

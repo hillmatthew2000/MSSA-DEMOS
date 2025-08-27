@@ -1,12 +1,13 @@
-﻿using System.Net;
+﻿namespace tester2;
 
-namespace tester2;
+class Program 
 
-class Program
+{ 
 
-{
-    static void Main(string[] args)
-    {
-      
-    }
+    static void Main() 
+
+    { 
+
+    } 
+
 }
