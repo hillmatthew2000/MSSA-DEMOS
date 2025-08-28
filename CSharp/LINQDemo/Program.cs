@@ -34,6 +34,7 @@ class Program
         int secondNumber = numbers.ElementAt(1); //9
         int someNumber = numbers.OrderBy(n => n).Skip(1).First(); //7
 
+        //Methods that return a single value like .count() and .First() use immediate query execution whereas methods that don't like .Contains() or OrderBy() use deferred execution.
         int count = numbers.Count(); //5
         int min = numbers.Min(); //6
 
