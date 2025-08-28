@@ -10,6 +10,7 @@ class Program
     static void Main()
     {
         Calculator calc;
+        
 
         Console.Write("Enter operation (add, multiply, or subtract): ");
         string input = Console.ReadLine();
