@@ -2,20 +2,29 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        int fact, num;
-        Console.WriteLine("Enter a number to find factorial");
-        num = Convert.ToInt32(Console.ReadLine());
-        fact = factorial(num);
-        Console.WriteLine($"Factorial of {num} is {fact}");
+        Console.WriteLine(Factorial(5));
+        Console.WriteLine(FactorialIterative(5));
     }
 
-    public static int factorial(int num)
+    //Factorial demonstrated using recursion
+    static int Factorial(int x)
     {
-        if (num == 0)
+        if (x == 0)
             return 1;
         else
-            return num * factorial(num - 1);
+            return x * Factorial(x - 1);
+    }
+
+    //Factorial demonstrated using iteration
+    static int FactorialIterative(int x)
+    {
+        int result = 1;
+        for (int i = 1; i <= x; i++)
+        {
+            result *= i;
+        }
+        return result;
     }
 }
