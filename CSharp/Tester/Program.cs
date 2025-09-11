@@ -1,4 +1,6 @@
-﻿namespace Tester;
+﻿using System.Collections.ObjectModel;
+
+namespace Tester;
 
 class Program
 {
