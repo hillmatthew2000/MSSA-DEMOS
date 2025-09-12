@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MSSA-DEMOS\\CSharp\\Tester2\\tester2.csproj": {}
+    "C:\\MSSA-DEMOS\\CSharp\\Tester2\\Tester2.csproj": {}
   },
   "projects": {
-    "C:\\MSSA-DEMOS\\CSharp\\Tester2\\tester2.csproj": {
+    "C:\\MSSA-DEMOS\\CSharp\\Tester2\\Tester2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\tester2.csproj",
-        "projectName": "tester2",
-        "projectPath": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\tester2.csproj",
+        "projectUniqueName": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\Tester2.csproj",
+        "projectName": "Tester2",
+        "projectPath": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\Tester2.csproj",
         "packagesPath": "C:\\Users\\hillm\\.nuget\\packages\\",
         "outputPath": "C:\\MSSA-DEMOS\\CSharp\\Tester2\\obj\\",
         "projectStyle": "PackageReference",
