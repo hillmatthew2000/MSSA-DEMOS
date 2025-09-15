@@ -15,11 +15,11 @@ class Program
             myQueue.EnqueueRear(4);
             myQueue.Display();
 
-            System.Console.WriteLine($"Dequeue Rear: {myQueue.DequeueRear()}");
-            System.Console.WriteLine($"Dequeue Front: {myQueue.DequeueFront()}");
+            Console.WriteLine($"Dequeue Rear: {myQueue.DequeueRear()}");
+            Console.WriteLine($"Dequeue Front: {myQueue.DequeueFront()}");
             myQueue.Display();
-            System.Console.WriteLine($"Dequeue Rear: {myQueue.DequeueRear()}");
-            System.Console.WriteLine($"Dequeue Front: {myQueue.DequeueFront()}");
+            Console.WriteLine($"Dequeue Rear: {myQueue.DequeueRear()}");
+            Console.WriteLine($"Dequeue Front: {myQueue.DequeueFront()}");
             myQueue.Display();
         }
         catch (Exception ex)
@@ -32,56 +32,57 @@ class Program
 public class DoubleEndedQueue
 {
     private int[] deQueueArray;
-    private int front, rear, size;
+    private int front, rear, size, capacity;
 
     public DoubleEndedQueue(int capacity)
     {
+        this.capacity = capacity;
         deQueueArray = new int[capacity];
         front = -1;
         rear = -1;
-        size = capacity;
+        size = 0;
     }
+
+    public bool IsFull() => size == capacity;
+    public bool IsEmpty() => size == 0;
 
     public void EnqueueFront(int value)
     {
         //Check if full
-        if (front == 0 ? (rear == size - 1) : (front - 1) % size == rear)
+        if (IsFull())
         {
             throw new InvalidOperationException("Queue Overflow");
         }
         //Check if empty
-        if (front == -1)
+        if (IsEmpty())
         {
             front = 0;
             rear = 0;
         }
-        //front first position wrap
-        else if (front == 0)
-        {
-            front = size - 1;
-        }
-        //decrement front
         else
         {
-            front = front - 1;
+            front = (front - 1 + capacity) % capacity;
         }
         deQueueArray[front] = value;
+        size++;
     }
 
     public void EnqueueRear(int value)
     {
-        if ((rear + 1) % size == front)
+        if (IsFull())
         {
             throw new InvalidOperationException("Queue Overflow");
         }
-        if (front == -1) front = 0;
-        rear = (rear + 1) % size;
+        if (IsEmpty()) front = 0;
+        else
+            rear = (rear + 1) % capacity;
         deQueueArray[rear] = value;
+        size++;
     }
 
     public int DequeueFront()
     {
-        if (front == -1)
+        if (IsEmpty())
         {
             throw new InvalidOperationException("Queue Underflow");
         }
@@ -91,31 +92,45 @@ public class DoubleEndedQueue
             front = -1;
             rear = -1;
         }
-        front = (front + 1) % size;
+        else
+            front = (front + 1) % capacity;
+        size--;
         return value;
     }
 
     public int DequeueRear()
     {
-        if (front == -1)
+        if (IsEmpty())
         {
             throw new InvalidOperationException("Queue Underflow");
         }
         int value = deQueueArray[rear];
 
         //if one element reset
-        if (front == rear) front = -1; rear = -1;
-
-        rear = (rear == 0) ? size - 1 : (rear - 1) % size;
+        if (front == rear)
+        {
+            front = -1;
+            rear = -1;
+        }
+        else
+        {
+            rear = (rear - 1 + capacity) % capacity;
+        }
+        size--;
         return value;
     }
 
     public void Display()
     {
+        if (IsEmpty())
+        {
+            Console.WriteLine("Queue is empty");
+            return;
+        }
         foreach (int num in deQueueArray)
         {
-            System.Console.Write(num + " ");
+            Console.Write(num + " ");
         }
-        System.Console.WriteLine();
+        Console.WriteLine();
     }
 }
