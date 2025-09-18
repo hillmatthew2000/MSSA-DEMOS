@@ -1,11 +1,9 @@
-﻿using System.IO;
+﻿using System.Text;
 
 class Program
 {
-
-    static void Main()
+    static void Main(string[] args)
     {
-        
+    
     }
-
 }
