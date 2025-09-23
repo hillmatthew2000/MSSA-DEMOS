@@ -1,84 +1,115 @@
 ﻿namespace DIP;
 
-/* This is a bad example of Dependency Inversion Principle (DIP).*/
-/* In this example, the Client class directly depends on the concrete Service class.
-   This violates the Dependency Inversion Principle because high-level modules (Client)
-   should not depend on low-level modules (Service); both should depend on abstractions.
-   To adhere to DIP, we would introduce an interface that both Client and Service depend on. */
+/* GOOD EXAMPLE: Follows the Dependency Inversion Principle (DIP)
+FileManager depends on the IStorage abstraction, not a concrete storage class.
+This allows easy swapping of storage implementations and simplifies testing. */
+public class FileManager
+{
+    private readonly IStorage _storage;
+    public FileManager(IStorage storage)
+    {
+        _storage = storage;
+    }
 
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         var service = new Service();
-//         var client = new Client(service);
-//         client.DoSomething();
-//     }
-// }
+    public void SaveDocument(string name, string content)
+    {
+        Console.WriteLine($"[FileManager] Saving document '{name}'...");
+        _storage.WriteFile(name, content);
+    }
 
-// class Service
-// {
-//     public void Execute()
-//     {
-//         Console.WriteLine("Service Executed");
-//     }
-// }
+    public void DeleteDocument(string name)
+    {
+        Console.WriteLine($"[FileManager] Deleting document '{name}'...");
+        _storage.DeleteFile(name);
+    }
+}
 
-// class Client
-// {
-//     private readonly Service _service;
+public interface IStorage
+{
+    void WriteFile(string filename, string content);
+    void DeleteFile(string filename);
+}
 
-//     public Client(Service service)
-//     {
-//         _service = service;
-//     }
+public class LocalStorage : IStorage
+{
+    public void WriteFile(string filename, string content)
+    {
+        Console.WriteLine($"[LocalStorage] '{filename}' saved with content: {content}");
+    }
 
-//     public void DoSomething()
-//     {
-//         _service.Execute();
-//     }
-// }
+    public void DeleteFile(string filename)
+    {
+        Console.WriteLine($"[LocalStorage] '{filename}' deleted from disk.");
+    }
+}
 
+public class RemoteStorage : IStorage
+{
+    public void WriteFile(string filename, string content)
+    {
+        Console.WriteLine($"[RemoteStorage] '{filename}' saved with content: {content}");
+    }
 
-/* This is a good example of Dependency Inversion Principle (DIP).*/
-/* In this improved example, both the ClientGood and ServiceGood classes depend on the IService interface.
-   This adheres to the Dependency Inversion Principle because high-level modules (ClientGood) do not depend
-   on low-level modules (ServiceGood); both depend on abstractions (IService). */
+    public void DeleteFile(string filename)
+    {
+        Console.WriteLine($"[RemoteStorage] '{filename}' deleted from disk.");
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
     {
-        IService service = new ServiceGood();
-        var client = new ClientGood(service);
-        client.DoSomething();
+        IStorage localStorage = new LocalStorage();
+        var manager = new FileManager(localStorage);
+        manager.SaveDocument("report.txt", "Quarterly data...");
+        manager.DeleteDocument("report.txt");
+        IStorage remoteStorage = new RemoteStorage();
+        var manager2 = new FileManager(remoteStorage);
+        manager2.SaveDocument("report2.txt", "Yearly data...");
+        manager2.DeleteDocument("report2.txt");
     }
 }
 
-interface IService
-{
-    void Execute();
-}
+/* BAD EXAMPLE: Violates the Dependency Inversion Principle (DIP)
+FileManager directly depends on the concrete LocalStorage class. This creates tight coupling 
+and makes it hard to switch storage implementations or test FileManager in isolation. */
+    
+// class Program
+// {
+//     static void Main()
+//     {
+//         var manager = new FileManager();
+//         manager.SaveDocument("report.txt", "Quarterly data...");
+//         manager.DeleteDocument("report.txt");
+//     }
+// }
+// public class FileManager
+// {
+//     private readonly LocalStorage _storage = new LocalStorage();
 
-class ServiceGood : IService
-{
-    public void Execute()
-    {
-        Console.WriteLine("Service Executed");
-    }
-}
+//     public void SaveDocument(string name, string content)
+//     {
+//         Console.WriteLine($"[FileManager] Saving document '{name}'...");
+//         _storage.WriteFile(name, content);
+//     }
 
-class ClientGood
-{
-    private readonly IService _service;
+//     public void DeleteDocument(string name)
+//     {
+//         Console.WriteLine($"[FileManager] Deleting document '{name}'...");
+//         _storage.DeleteFile(name);
+//     }
+// }
 
-    public ClientGood(IService service)
-    {
-        _service = service;
-    }
+// public class LocalStorage
+// {
+//     public void WriteFile(string filename, string content)
+//     {
+//         Console.WriteLine($"[LocalStorage] '{filename}' saved with content: {content}");
+//     }
 
-    public void DoSomething()
-    {
-        _service.Execute();
-    }
-}
-
+//     public void DeleteFile(string filename)
+//     {
+//         Console.WriteLine($"[LocalStorage] '{filename}' deleted from disk.");
+//     }
+// }
