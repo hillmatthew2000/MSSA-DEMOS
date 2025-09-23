@@ -8,7 +8,7 @@ public class FileManager
     private readonly IStorage _storage;
     public FileManager(IStorage storage)
     {
-        _storage = storage;
+        _storage = storage ?? throw new ArgumentNullException(nameof(storage));
     }
 
     public void SaveDocument(string name, string content)
