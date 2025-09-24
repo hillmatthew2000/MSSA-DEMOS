@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace FrameworkInjection;
 
@@ -10,8 +10,9 @@ public class Program
         using IHost host = Host.CreateDefaultBuilder(args)
             .ConfigureServices(services =>
             {
-                services.AddSingleton<EmailService>();
-                services.AddTransient<UserRegistrationService>();
+                services.AddSingleton<IEmailService, EmailService>();
+                services.AddSingleton<IUserRepository, UserRepository>();
+                services.AddTransient<IUserRegistrationService, UserRegistrationService>();
                 services.AddTransient<ConsoleApp>();
             })
             .Build();
@@ -20,39 +21,61 @@ public class Program
         app.Run();
     }
 }
-
+ 
 public class ConsoleApp
 {
-    private readonly UserRegistrationService _registrationService;
-
-    public ConsoleApp(UserRegistrationService registrationService)
+    private readonly IUserRegistrationService _registrationService;
+ 
+    public ConsoleApp(IUserRegistrationService registrationService)
     {
         _registrationService = registrationService;
     }
-
+ 
     public void Run()
     {
         _registrationService.RegisterUser("alice@example.com");
     }
-
+ 
 }
-
-public class UserRegistrationService
+ 
+public interface IUserRegistrationService
 {
-    private readonly EmailService _emailService;
-    public UserRegistrationService(EmailService emailService)
+    void RegisterUser(string email);
+}
+ 
+public class UserRegistrationService : IUserRegistrationService
+{
+    private readonly IEmailService _emailService;
+    private readonly IUserRepository _userRepository;
+    public UserRegistrationService(IUserRepository userRepository, IEmailService emailService)
     {
+        _userRepository = userRepository;
         _emailService = emailService;
     }
     public void RegisterUser(string email)
     {
-        Console.WriteLine($"User '{email}' registered successfully");
+        _userRepository.AddUser(email);
         _emailService.SendWelcomeEmail(email);
     }
 }
-
-
-public class EmailService
+ 
+public interface IUserRepository
+{
+    void AddUser(string email);
+}
+public class UserRepository: IUserRepository
+{
+    public void AddUser(string email)
+    {
+        Console.WriteLine($"User '{email}' added to the database");
+    }
+}
+ 
+public interface IEmailService
+{
+    void SendWelcomeEmail(string email);
+}
+public class EmailService : IEmailService
 {
     public void SendWelcomeEmail(string email)
     {
