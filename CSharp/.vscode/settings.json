@@ -1,3 +1,3 @@
 {
-    "dotnet.defaultSolution": "QueueImplementation.sln"
+    "dotnet.defaultSolution": "StackUsingLinkedList.sln"
 }

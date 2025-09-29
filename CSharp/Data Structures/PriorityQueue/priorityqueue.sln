@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "priorityqueue", "priorityqueue.csproj", "{4E0CBF4B-8B8E-4F88-99DE-06A7F610C658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleEndedQueueImplementation", "..\DoubleEndedQueueImplementation\DoubleEndedQueueImplementation.csproj", "{7BDFD038-0F22-4886-86B9-8A446F4C007E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
